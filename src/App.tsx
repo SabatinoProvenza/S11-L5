@@ -6,6 +6,7 @@ import RadioSection from "./components/RadioSection"
 import NewRealeases from "./components/NewRealeases"
 import ExploreSection from "./components/ExploreSection"
 import Footer from "./components/Footer"
+import Player from "./components/Player"
 
 function App() {
   return (
@@ -15,13 +16,15 @@ function App() {
       <div className="flex-grow-1 d-flex flex-column">
         <TopBar />
 
-        <main className="flex-grow-1 p-2 p-md-3">
+        <main className="flex-grow-1 p-2 p-md-3 pb-3">
           <HeroSection />
           <RadioSection />
           <NewRealeases />
           <ExploreSection />
         </main>
+
         <Footer />
+        <Player />
       </div>
     </div>
   )

@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer
-      className="container-fluid mt-5 pt-4 pb-3 px-4"
+      className="container-fluid mt-3 mb-5 mb-md-0 py-4 pb-5 px-4"
       style={{
         backgroundColor: "#464646ff",
       }}
