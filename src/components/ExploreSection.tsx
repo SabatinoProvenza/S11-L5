@@ -1,7 +1,7 @@
 function ExploreSection() {
   return (
     <section className="mb-5">
-      <div className="container-fluid px-0">
+      <div className="container-fluid px-2 px-md-0">
         {/* TITOLO */}
         <h5 className="fw-bold mb-3">Altro da esplorare</h5>
 

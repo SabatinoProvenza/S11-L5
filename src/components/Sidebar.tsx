@@ -3,10 +3,10 @@ import music from "../assets/music.svg"
 function Sidebar() {
   return (
     <aside
-      className="bg-black text-white p-4 d-none d-md-flex flex-column"
-      style={{ width: "40rem" }}
+      className=" text-white p-4 d-none d-md-flex flex-column"
+      style={{ width: "50rem", backgroundColor: "#1a1919ff" }}
     >
-      <div className="fw-bold fs-5 mb-3">
+      <div className="fw-bold fs-5 mb-4">
         <img
           src={music}
           alt="logo"
@@ -14,20 +14,28 @@ function Sidebar() {
         />
       </div>
 
-      <input
-        type="text"
-        className="form-control form-control-sm bg-dark text-white border-1 border-secondary  mb-4"
-        placeholder="Cerca"
-      />
+      <div className="input-group input-group mb-4">
+        <span className="input-group-text bg-black border-0 text-secondary">
+          <i className="bi bi-search text-danger fs-6 "></i>
+        </span>
+        <input
+          type="text"
+          className="form-control bg-black text-white border-0 input-search"
+          placeholder="Cerca"
+        />
+      </div>
 
       <nav className="d-flex flex-column gap-2">
-        <a className="text-secondary text-decoration-none" href="#">
+        <a className="text-white text-decoration-none" href="#">
+          <i className="bi bi-house text-danger me-2"></i>
           Home
         </a>
-        <a className="text-secondary text-decoration-none" href="#">
+        <a className="text-white text-decoration-none" href="#">
+          <i className="bi bi-grid text-danger me-2"></i>
           Novità
         </a>
-        <a className="text-secondary text-decoration-none" href="#">
+        <a className="text-white text-decoration-none" href="#">
+          <i className="bi bi-broadcast-pin text-danger me-2"></i>
           Radio
         </a>
       </nav>

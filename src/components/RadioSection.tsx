@@ -8,7 +8,7 @@ import img6 from "../assets/2f.png"
 function RadioSection() {
   return (
     <section className="mb-5">
-      <div className="container-fluid px-0">
+      <div className="container-fluid px-2 px-md-0">
         {/* TITOLO */}
         <div className="d-flex align-items-center justify-content-start gap-2 mb-3">
           <h5 className="fw-bold mb-0">Nuovi episodi radio</h5>

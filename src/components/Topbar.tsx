@@ -17,7 +17,7 @@ function TopBar() {
           className="btn btn-link text-danger d-md-none fs-4 p-0"
           aria-label="Menu"
         >
-          ☰
+          <i className="bi bi-list fs-3"></i>
         </button>
 
         {/* CONTROLLI PLAYER — SOLO DESKTOP */}
@@ -38,6 +38,7 @@ function TopBar() {
       {/* DESTRA */}
       <div className="d-flex align-items-center gap-3">
         {/* VOLUME — SOLO DESKTOP */}
+        <i className="bi bi-volume-up-fill text-secondary fs-6 d-none d-md-block"></i>
         <input
           type="range"
           className="form-range d-none d-md-block"
@@ -45,9 +46,9 @@ function TopBar() {
         />
 
         {/* LOGIN */}
-        <button className="btn btn-danger btn-sm d-flex align-items-center gap-2">
-          <i className="bi bi-person-fill"></i>
-          Accedi
+        <button className="btn btn-danger btn-sm d-flex align-items-center gap-2 px-2">
+          <i className="bi bi-person-fill d-none d-md-inline"></i>
+          <span className="fw-bold ">Accedi</span>
         </button>
       </div>
     </header>
