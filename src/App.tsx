@@ -1,6 +1,7 @@
 import "./App.css"
 import Sidebar from "./components/Sidebar"
 import TopBar from "./components/Topbar"
+import HeroSection from "./components/HeroSection"
 
 function App() {
   return (
@@ -11,8 +12,7 @@ function App() {
         <TopBar />
 
         <main className="flex-grow-1 p-4">
-          <h1 className="fw-bold">Novità</h1>
-          <hr />
+          <HeroSection />
         </main>
       </div>
     </div>
