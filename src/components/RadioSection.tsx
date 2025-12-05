@@ -18,8 +18,8 @@ function RadioSection() {
         {/* GRIGLIA RESPONSIVE */}
         <div className="row g-3">
           {/* CARD 1 */}
-          <div className="col-6 col-md-4 col-lg-2">
-            <div className="rounded-4 overflow-hidden mb-2">
+          <div className="col-6 col-md-4 col-lg-2 ">
+            <div className="rounded-4 overflow-hidden mb-2 hover-card">
               <img src={img1} className="img-fluid w-100" alt="radio 1" />
             </div>
             <small className="text-secondary d-block text-truncate">
@@ -28,8 +28,8 @@ function RadioSection() {
           </div>
 
           {/* CARD 2 */}
-          <div className="col-6 col-md-4 col-lg-2">
-            <div className="rounded-4 overflow-hidden mb-2">
+          <div className="col-6 col-md-4 col-lg-2 ">
+            <div className="rounded-4 overflow-hidden mb-2 hover-card">
               <img src={img2} className="img-fluid w-100" alt="radio 2" />
             </div>
             <small className="text-secondary d-block text-truncate">
@@ -39,7 +39,7 @@ function RadioSection() {
 
           {/* CARD 3 */}
           <div className="col-6 col-md-4 col-lg-2">
-            <div className="rounded-4 overflow-hidden mb-2">
+            <div className="rounded-4 overflow-hidden mb-2 hover-card">
               <img src={img3} className="img-fluid w-100" alt="radio 3" />
             </div>
             <small className="text-secondary d-block text-truncate">
@@ -49,7 +49,7 @@ function RadioSection() {
 
           {/* CARD 4 */}
           <div className="col-6 col-md-4 col-lg-2">
-            <div className="rounded-4 overflow-hidden mb-2">
+            <div className="rounded-4 overflow-hidden mb-2 hover-card">
               <img src={img4} className="img-fluid w-100" alt="radio 4" />
             </div>
             <small className="text-secondary d-block text-truncate">
@@ -59,7 +59,7 @@ function RadioSection() {
 
           {/* CARD 5 */}
           <div className="col-6 col-md-4 col-lg-2">
-            <div className="rounded-4 overflow-hidden mb-2">
+            <div className="rounded-4 overflow-hidden mb-2 hover-card">
               <img src={img5} className="img-fluid w-100" alt="radio 5" />
             </div>
             <small className="text-secondary d-block text-truncate">
@@ -69,7 +69,7 @@ function RadioSection() {
 
           {/* CARD 6 */}
           <div className="col-6 col-md-4 col-lg-2">
-            <div className="rounded-4 overflow-hidden mb-2">
+            <div className="rounded-4 overflow-hidden mb-2 hover-card">
               <img src={img6} className="img-fluid w-100" alt="radio 6" />
             </div>
             <small className="text-secondary d-block text-truncate">

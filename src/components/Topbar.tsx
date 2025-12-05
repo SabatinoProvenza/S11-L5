@@ -32,7 +32,11 @@ function TopBar() {
 
       {/* CENTRO — LOGO */}
       <div className="fw-bold text-white d-flex align-items-center gap-2 fs-5">
-        <img src={logo} alt="logo" />
+        <img
+          src={logo}
+          alt="logo"
+          style={{ filter: "invert(1) brightness(100)" }}
+        />
       </div>
 
       {/* DESTRA */}
@@ -41,7 +45,7 @@ function TopBar() {
         <i className="bi bi-volume-up-fill text-secondary fs-6 d-none d-md-block"></i>
         <input
           type="range"
-          className="form-range d-none d-md-block"
+          className="volume-slider d-none d-md-block "
           style={{ width: "120px" }}
         />
 

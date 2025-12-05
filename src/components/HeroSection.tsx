@@ -20,7 +20,7 @@ function HeroSection() {
               </p>
             </div>
 
-            <div className="rounded-4 ">
+            <div className="rounded-4 hover-card ">
               <img src={img1} className="img-fluid w-100" alt="chill" />
             </div>
           </div>
@@ -34,7 +34,7 @@ function HeroSection() {
               <p className=" mb-3">Ecco la nuova casa della musica latina</p>
             </div>
 
-            <div className="rounded-4 ">
+            <div className="rounded-4 hover-card">
               <img src={img2} className="img-fluid w-100" alt="latina" />
             </div>
           </div>

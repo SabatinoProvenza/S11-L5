@@ -19,19 +19,24 @@ function NewReleasesSection() {
   const [tracks, setTracks] = useState<DeezerTrack[]>([])
   const [loading, setLoading] = useState(true)
 
-  const getTracks = function () {
-    fetch(
-      "https://striveschool-api.herokuapp.com/api/deezer/search?q=rosevillain"
-    )
-      .then((res) => res.json())
-      .then((data) => {
-        setTracks(data.data.slice(0, 12))
-        setLoading(false)
-      })
-      .catch((err) => {
-        console.log("Errore fetch:", err)
-        setLoading(false)
-      })
+  const getTracks = async () => {
+    try {
+      const res = await fetch(
+        "https://striveschool-api.herokuapp.com/api/deezer/search?q=rosevillain"
+      )
+
+      if (!res.ok) {
+        throw new Error("Errore nella fetch: ")
+      }
+
+      const data = await res.json()
+
+      setTracks(data.data.slice(0, 12))
+      setLoading(false)
+    } catch (err) {
+      console.log("Errore fetch:", err)
+      setLoading(false)
+    }
   }
 
   useEffect(() => {
@@ -55,7 +60,7 @@ function NewReleasesSection() {
             tracks.map((track) => (
               <div key={track.id} className="col-6 col-md-4 col-lg-3">
                 {/* COVER */}
-                <div className="rounded-4 overflow-hidden mb-2">
+                <div className="rounded-4 overflow-hidden mb-2 hover-card">
                   <img
                     src={track.album.cover_medium}
                     className="img-fluid w-100"
@@ -74,7 +79,7 @@ function NewReleasesSection() {
                     </small>
                   </div>
 
-                  {/* BADGE ESPLICITO */}
+                  {/* BADGE  */}
                   <span
                     className="badge bg-secondary ms-2"
                     style={{ fontSize: "10px" }}
