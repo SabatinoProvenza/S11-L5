@@ -1,3 +1,5 @@
+import logo from "../assets/music.svg"
+
 function TopBar() {
   return (
     <header
@@ -30,7 +32,7 @@ function TopBar() {
 
       {/* CENTRO — LOGO */}
       <div className="fw-bold text-white d-flex align-items-center gap-2 fs-5">
-         Music
+        <img src={logo} alt="logo" />
       </div>
 
       {/* DESTRA */}

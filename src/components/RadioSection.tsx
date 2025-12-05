@@ -10,7 +10,7 @@ function RadioSection() {
     <section className="mb-5">
       <div className="container-fluid px-0">
         {/* TITOLO */}
-        <div className="d-flex align-items-center justify-content-between mb-3">
+        <div className="d-flex align-items-center justify-content-start gap-2 mb-3">
           <h5 className="fw-bold mb-0">Nuovi episodi radio</h5>
           <span className="text-secondary">›</span>
         </div>

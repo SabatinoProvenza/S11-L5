@@ -4,7 +4,7 @@ function Sidebar() {
   return (
     <aside
       className="bg-black text-white p-4 d-none d-md-flex flex-column"
-      style={{ width: "240px" }}
+      style={{ width: "40rem" }}
     >
       <div className="fw-bold fs-5 mb-3">
         <img
