@@ -2,6 +2,7 @@ import "./App.css"
 import Sidebar from "./components/Sidebar"
 import TopBar from "./components/Topbar"
 import HeroSection from "./components/HeroSection"
+import RadioSection from "./components/RadioSection"
 
 function App() {
   return (
@@ -11,8 +12,9 @@ function App() {
       <div className="flex-grow-1 d-flex flex-column">
         <TopBar />
 
-        <main className="flex-grow-1 p-4">
+        <main className="flex-grow-1 p-3 p-md-4">
           <HeroSection />
+          <RadioSection />
         </main>
       </div>
     </div>

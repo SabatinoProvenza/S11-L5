@@ -4,7 +4,7 @@ import img2 from "../assets/1b.png"
 function HeroSection() {
   return (
     <section className="mb-5">
-      <div className="container-fluid px-0">
+      <div className="container-fluid px-2 px-md-0">
         <h2 className="fw-bold mb-4">Novità</h2>
         <hr />
 
@@ -20,7 +20,7 @@ function HeroSection() {
               </p>
             </div>
 
-            <div className="rounded-4 overflow-hidden">
+            <div className="rounded-4 ">
               <img src={img1} className="img-fluid w-100" alt="chill" />
             </div>
           </div>
@@ -34,7 +34,7 @@ function HeroSection() {
               <p className=" mb-3">Ecco la nuova casa della musica latina</p>
             </div>
 
-            <div className="rounded-4 overflow-hidden">
+            <div className="rounded-4 ">
               <img src={img2} className="img-fluid w-100" alt="latina" />
             </div>
           </div>

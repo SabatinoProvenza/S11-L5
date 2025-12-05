@@ -2,7 +2,10 @@ import music from "../assets/music.svg"
 
 function Sidebar() {
   return (
-    <aside className="bg-black text-white p-4" style={{ width: "240px" }}>
+    <aside
+      className="bg-black text-white p-4 d-none d-md-flex flex-column"
+      style={{ width: "240px" }}
+    >
       <div className="fw-bold fs-5 mb-3">
         <img
           src={music}
